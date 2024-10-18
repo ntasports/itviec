@@ -11,8 +11,8 @@ import { RootState } from '@/redux/store';
 import authApi from '@/api/authApi';
 import { useRouter } from 'next/navigation';
 import { useNotifyCustom } from '@/hook/Notification/useNotification';
-import setLanguageValue from '@/app/api/auth/set-language/route';
 import { useTranslations } from 'next-intl';
+import setLanguageValue from '@/api/fetching/setLanguage';
 export const Header: React.FC = () => {
 	const router = useRouter();
 

@@ -9,6 +9,6 @@ export default function GetLocalStorage({ children }: { children: React.ReactNod
         if (user_data) {
             dispatch(loginSuccess(JSON.parse(user_data)));
         }
-    }, []);
+    }, [dispatch]);
     return children;
 }
